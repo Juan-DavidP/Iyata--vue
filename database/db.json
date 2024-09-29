@@ -1,0 +1,16 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Dart vader",
+      "valor": "50",
+      "imagen": "https://pepeganga.vtexassets.com/arquivos/ids/894330/100877153-1.png?v=638122405363600000"
+    },
+    {
+      "id": "2",
+      "nombre": "Dart vader",
+      "valor": "50",
+      "imagen": "https://pepeganga.vtexassets.com/arquivos/ids/894330/100877153-1.png?v=638122405363600000"
+    }
+  ]
+}
