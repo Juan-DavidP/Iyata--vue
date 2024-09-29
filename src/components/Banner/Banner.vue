@@ -5,7 +5,7 @@
         </div>
         <div>
             <p>$ {{ valor }}</p>
-            <img src="/icon.svg" alt="">
+            <button> <img src="/icon.svg" alt="" :key="id" @click="deleteProduct(id)"></button>
         </div>
 
     </div>
@@ -13,20 +13,22 @@
 
 <script setup>
 import { defineProps } from 'vue';
+import { deleteProduct } from '../../../services/api';
 
 const props = defineProps([
     'imagen',
     'nombre',
-    'valor'
+    'valor',
+    'id'
 ])
 
-const { imagen, nombre, valor } = props
+const { imagen, nombre, valor, id } = props
+
 
 </script>
 
 <style scoped>
-img{
+img {
     width: 100px;
 }
-
 </style>

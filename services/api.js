@@ -29,7 +29,11 @@ export async function getData() {
 
 export async function CreateProduct(datosProducto) {
     console.log(datosProducto);
-    // const respuesta = await axios.post(api, datosProducto);
-    // console.log("producto agregado: ", respuesta.data);
-    // return respuesta.data
+    const respuesta = await axios.post(api, datosProducto);
+    console.log("producto agregado: ", respuesta.data);
+    return respuesta.data
+}
+
+export async function deleteProduct(id) {
+    axios.delete(`${api}/${id}`)
 }

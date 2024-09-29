@@ -1,5 +1,5 @@
 <template>
-    <input :value="modelValue" @blur="$emit('update:modelValue', $event.target.value)" />
+    <input :value="modelValue" @blur="$emit('update:modelValue', $event.target.value)"  required/>
 </template>
 
 <script setup>
