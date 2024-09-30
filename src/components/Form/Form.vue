@@ -41,9 +41,6 @@ const nombre = ref("")
 const imagen = ref("")
 const valor = ref("")
 
-console.log(nombre.value);
-
-
 function enviarFormulario() {
     /*const validacion = validacionDatos()
     console.log(validacion);

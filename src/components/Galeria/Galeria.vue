@@ -1,6 +1,8 @@
 <template>
-    <div v-for="item in data" :key="item.id">
-        <Banner :imagen="item.imagen" :nombre="item.nombre" :valor="item.valor" :id="item.id" />
+    <div class="flex gap-12 flex-wrap">
+            <div class="bg-blue-400 border border-solid border-black px-8 py-3" v-for="item in data" :key="item.id">
+                <Banner class="" :imagen="item.imagen" :nombre="item.nombre" :valor="item.valor" :id="item.id" />
+            </div>
     </div>
 </template>
 
