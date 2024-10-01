@@ -1,12 +1,12 @@
 <template>
     <form @submit.prevent="enviarFormulario">
-        <div>
+        <div class="flex flex-col items-center gap-10">
             <Input v-model="nombre" placeholder="Nombre..." />
             <Input v-model="valor" type="number" placeholder="Precio..." />
             <Input v-model="imagen" placeholder="Imagen..." />
-            <div>
-                <Button nombre-button="Enviar" tipo="submit" />
-                <Button nombre-button="limpiar" tipo="reset" />
+            <div class="flex gap-10">
+                <Button class="bg-blue-500 text-white" nombre-button="Enviar" tipo="submit" />
+                <Button class="text-blue-500" nombre-button="limpiar" tipo="reset" />
             </div>
         </div>
     </form>
@@ -17,6 +17,7 @@ import { ref } from 'vue';
 import { CreateProduct } from '../../../services/api';
 import Input from './Input/Input.vue';
 import Button from './Button/Button.vue';
+import Modal from '../Modal/Modal.vue';
 
 let nombreValido = true
 let imagenValido = true
@@ -56,6 +57,10 @@ function enviarFormulario() {
         imagen: imagen.value,
         valor: valor.value
     })
+
+    nombre.value = ""
+    imagen.value = ""
+    valor.value = ""
 }
 
 </script>

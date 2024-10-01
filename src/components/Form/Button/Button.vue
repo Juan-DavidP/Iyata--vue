@@ -1,5 +1,5 @@
 <template>
-    <button :type="tipo"> {{ nombreButton }}</button>
+    <button class=" py-4 px-14 border border-solid border-blue-500 rounded" :type="tipo"> {{ nombreButton }}</button>
 </template>
 
 <script setup>

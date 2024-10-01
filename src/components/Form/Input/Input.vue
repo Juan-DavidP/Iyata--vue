@@ -1,5 +1,5 @@
 <template>
-    <input :value="modelValue" @blur="$emit('update:modelValue', $event.target.value)"  required/>
+    <input class="border border-solid border-blue-500 px-2 rounded-lg py-2.5 w-5/6" :value="modelValue" @blur="$emit('update:modelValue', $event.target.value)"  required/>
 </template>
 
 <script setup>

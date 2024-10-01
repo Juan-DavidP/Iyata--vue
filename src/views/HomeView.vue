@@ -16,7 +16,7 @@ import Galeria from '@/components/Galeria/Galeria.vue';
       </Suspense>
     </Section>
     <Section titulo="Agregar producto">
-      <Form> </Form>
+      <Form />
     </Section>
   </Container>
   <Footer />
