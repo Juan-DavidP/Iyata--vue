@@ -1,5 +1,5 @@
 <template>
-    <div class="w-1/2 px-3 pt-10">
+    <div class=" md:w-1/2 md:px-10 pt-10">
         <h2 class="text-center text-2xl mb-12 ">{{ titulo }}</h2>
         <slot>
         </slot>

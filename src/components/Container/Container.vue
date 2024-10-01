@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-around"> <!--items-center-->
+    <div class="flex-col-reverse flex md:justify-around md:flex-row"> <!--items-center-->
         <slot></slot>
     </div>
 </template>

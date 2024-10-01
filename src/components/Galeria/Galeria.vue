@@ -1,8 +1,8 @@
 <template>
-    <div class="flex gap-12 flex-wrap overflow-y-auto h-80">
-            <div class="bg-blue-400 h-56 border border-solid border-black px-8 py-3" v-for="item in data" :key="item.id">
-                <Banner class="" :imagen="item.imagen" :nombre="item.nombre" :valor="item.valor" :id="item.id" />
-            </div>
+    <div class="justify-center md:justify-start gap-2 flex md:gap-4 flex-wrap overflow-y-auto h-80">
+        <div class="bg-blue-400 h-56 border border-solid border-black px-6 md:px-3 lg:px-8 py-3" v-for="item in data" :key="item.id">
+            <Banner class="" :imagen="item.imagen" :nombre="item.nombre" :valor="item.valor" :id="item.id" />
+        </div>
     </div>
 </template>
 
